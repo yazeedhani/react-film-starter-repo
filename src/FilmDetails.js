@@ -12,7 +12,6 @@ function FilmDetails(props) {
             <img src={backdropUrl} alt="" />
             <h1 className="film-title">{props.film.title}</h1>
           </figure>
-    
           <div className="film-meta">
             <h2 className="film-tagline">{props.film.tagline}</h2>
             <p className="film-detail-overview">
@@ -22,16 +21,15 @@ function FilmDetails(props) {
           </div>
         </div>
       )
-    } else {
-      return (
-        <div className="film-detail">
-          <p>
-            <i className="material-icons">subscriptions</i>
-            <span>No film selected</span>
-          </p>
-        </div>
-      )
-    }
+    } 
+    return (
+      <div className="film-detail">
+        <p>
+          <i className="material-icons">subscriptions</i>
+          <span>No film selected</span>
+        </p>
+      </div>
+    )
   };
 
   return (
