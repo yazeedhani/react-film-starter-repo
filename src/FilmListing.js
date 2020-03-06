@@ -3,13 +3,34 @@ import FilmRow from './FilmRow';
 
 export default function FilmListing(props) {
   const [filter, setFilter] = useState('all');
+  const [faves, setFaves] = useState([]);
 
   let handleFilterClick = (filter) => {
     console.log(`Setting filter to ${filter}`);
     setFilter(filter);
   }
 
-  let allFilms = props.films.map(film => { return <FilmRow film={film} />})
+  let handleFaveToggle = (film) => {
+    let faveIndex = faves.indexOf(film);
+    if (faveIndex < 0) {
+      setFaves([...faves, film]);
+    } else {
+      let newFaves = [...faves];
+      newFaves.splice(faveIndex, 1);
+      setFaves(newFaves);
+    }
+  }
+
+  let filmsToDisplay = filter === 'all' ? props.films : faves;
+  let allFilms = filmsToDisplay.map(film => { 
+    return (
+      <FilmRow 
+        film={film} 
+        onFaveToggle={handleFaveToggle}
+        isFave={faves.includes(film)} 
+        handleDetailsClick={props.handleDetailsClick} />
+    )
+  })
 
   return (
     <div className="film-list">
@@ -25,10 +46,10 @@ export default function FilmListing(props) {
             handleFilterClick("faves")
           }}>
             FAVES
-            <span className="section-count">0</span>
+        <span className="section-count">{faves.length}</span>
           </div>
       </div>
-      
+
       {allFilms}
     </div>
   )
