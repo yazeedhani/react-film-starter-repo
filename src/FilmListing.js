@@ -3,11 +3,12 @@ import FilmRow from './FilmRow';
 
 class FilmListing extends Component {
   render() {
-    const allFilms = this.props.films.map((film) =>{
-      return (
-        <FilmRow film={film} />
-      )
-    })
+    const handleFilterClick = filter => {
+      console.log(`Setting filter to ${filter}`)
+    }
+
+    const allFilms = this.props.films.map((film, i) => <FilmRow film={film} key={`filmRow-${i}`} />)
+
     return (
         <div className="film-list">
           <h1 className="section-title">FILMS</h1>
