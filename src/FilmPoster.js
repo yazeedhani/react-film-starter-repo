@@ -1,9 +1,9 @@
 import React from 'react';
 
-function FilmPoster() {
+function FilmPoster(props) {
   return (
-    <img src={this.props.poster_path} 
-        alt={`Poster of the film ${this.props.title}`} 
+    <img src={props.poster_path} 
+        alt={`Poster of the film ${props.title}`} 
     />
   );
 }
