@@ -13,7 +13,7 @@ const TMDB = {
       "id": 343668,
         "title": "Kingsman: The Golden Circle",
         "poster_path": "/pKESfn2Pdy0b7drvZHQb7UzgqoY.jpg",
-        "backdrop_path": "/uExPmkOHJySrbJyJDJylHDqaT58.jpg",
+        "backdrop_path": "/vLsw44dKHp1LhGCmcv3Pv6LXgEH.jpg",
         "overview": "When an attack on the Kingsman headquarters takes place and a new villain rises, Eggsy and Merlin are forced to work together with the American agency known as the Statesman to save the world.",
         "release_date": "2017-09-20"
     },
@@ -29,7 +29,7 @@ const TMDB = {
         "id": 335984,
         "title": "Blade Runner 2049",
         "poster_path": "/cbRQVCia0urtv5UGsVFTdqLDIRv.jpg",
-        "backdrop_path": "/zfWPeRgYpRjPZLGwwkfnTfaFnNh.jpg",
+        "backdrop_path": "/sAtoMqDVhNDQBc3QJL3RF6hlhGq.jpg",
         "overview": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years.",
         "release_date": "2017-10-04"
     },
