@@ -1,6 +1,7 @@
 import React from 'react';
 
 function FilmDetails(props) {
+  // Contente to show if there is a film
   const filmInfo = (
     <div className="film-detail is-hydrated">
       <figure className="film-backdrop">
@@ -18,6 +19,7 @@ function FilmDetails(props) {
     </div>
   )
 
+  // Content to show when there's no film
   const emptyInfo = (
     <div className="film-detail">
       <p>
