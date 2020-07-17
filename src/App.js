@@ -10,8 +10,8 @@ function App() {
 
   return (
     <div className="film-library">
-      <FilmListing films={TMDB.films} />
-      <FilmDetails films={TMDB.films} />
+      <FilmListing films={films} />
+      <FilmDetails film={current} />
     </div>
   );
 }
