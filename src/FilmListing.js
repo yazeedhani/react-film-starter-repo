@@ -5,6 +5,10 @@ function FilmListing(props) {
   const [filter, setFilter] = useState('all');
   const [faves, setFaves] = useState([]);
 
+  const handleFaveToggle = film => {
+    console.log('Handling fave')
+  }
+
   const handleFilterClick = filter => {
     console.log(`Setting filter to ${filter}`)
     setFilter(filter)
