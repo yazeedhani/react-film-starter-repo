@@ -22,7 +22,14 @@ function FilmListing(props) {
     console.log(`Setting filter to ${filter}`)
     setFilter(filter)
   }
-  const allFilms = props.films.map((film, i) => <FilmRow film={film} key={`filmRow-${i}`} />)
+
+  const allFilms = props.films.map((film, i) => (
+    <FilmRow 
+      film={film} 
+      key={`filmRow-${i}`} 
+      onFaveToggle={handleFaveToggle} 
+    /> 
+  ))
 
   return (
     <div className="film-list">
