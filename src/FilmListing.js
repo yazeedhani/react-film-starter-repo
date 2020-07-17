@@ -27,7 +27,8 @@ function FilmListing(props) {
     <FilmRow 
       film={film} 
       key={`filmRow-${i}`} 
-      onFaveToggle={handleFaveToggle} 
+      onFaveToggle={handleFaveToggle}
+      isFave={faves.includes(film)} 
     /> 
   ))
 

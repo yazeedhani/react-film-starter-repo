@@ -18,7 +18,7 @@ function FilmRow(props) {
         <h1>{props.film.title}</h1>
         <p>{props.film.release_date.substr(0,4)}</p>
       </div>
-      <Fave onFaveToggle={() => {props.onFaveToggle(props.film)}} />
+      <Fave onFaveToggle={() => {props.onFaveToggle(props.film)}} isFave={props.isFave} />
     </div>
   );
 }
