@@ -48,7 +48,7 @@ function FilmListing(props) {
           onClick={() => handleFilterClick('faves')}
         >
           FAVES
-          <span className="section-count">0</span>
+          <span className="section-count">{faves.length}</span>
         </div>
     </div>
 
