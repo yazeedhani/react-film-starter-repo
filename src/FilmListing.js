@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import FilmRow from './FilmRow';
 
 function FilmListing(props) {
-  const [filter, setFilter] = useState('all')
+  const [filter, setFilter] = useState('all');
+  const [faves, setFaves] = useState([]);
 
   const handleFilterClick = filter => {
     console.log(`Setting filter to ${filter}`)
