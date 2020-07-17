@@ -7,6 +7,7 @@ function FilmListing(props) {
 
   const handleFaveToggle = film => {
     console.log('Handling fave')
+    const filmIndex = newFaves.indexOf(film)
   }
 
   const handleFilterClick = filter => {
