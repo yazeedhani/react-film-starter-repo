@@ -6,8 +6,16 @@ function FilmListing(props) {
   const [faves, setFaves] = useState([]);
 
   const handleFaveToggle = film => {
-    console.log('Handling fave')
-    const filmIndex = newFaves.indexOf(film)
+    let newFaves = [...faves];
+    const filmIndex = newFaves.indexOf(film);
+    if (filmIndex < 0) {
+      console.log(`ADDING ${film.title} TO FAVES`)
+      newFaves = [...newFaves, film];
+    } else {
+      console.log(`REMOVING ${film.title} TO FAVES`)
+      newFaves.splice(faveIndex, 1)
+    }
+    setFaves(newFaves)
   }
 
   const handleFilterClick = filter => {
