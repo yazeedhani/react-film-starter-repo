@@ -23,7 +23,9 @@ function FilmListing(props) {
     setFilter(filter)
   }
 
-  const allFilms = props.films.map((film, i) => (
+  let filmsToDisplay = filter=== "all" ? props.films : faves;
+
+  const allFilms = filmsToDisplay.map((film, i) => (
     <FilmRow 
       film={film} 
       key={`filmRow-${i}`} 
