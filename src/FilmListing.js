@@ -13,7 +13,7 @@ function FilmListing(props) {
       newFaves = [...newFaves, film];
     } else {
       console.log(`REMOVING ${film.title} TO FAVES`)
-      newFaves.splice(faveIndex, 1)
+      newFaves.splice(filmIndex, 1)
     }
     setFaves(newFaves)
   }
