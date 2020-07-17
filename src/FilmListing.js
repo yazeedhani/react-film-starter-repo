@@ -28,7 +28,8 @@ function FilmListing(props) {
       film={film} 
       key={`filmRow-${i}`} 
       onFaveToggle={handleFaveToggle}
-      isFave={faves.includes(film)} 
+      isFave={faves.includes(film)}
+      handleDetailsClick={props.handleDetailsClick}
     /> 
   ))
 
