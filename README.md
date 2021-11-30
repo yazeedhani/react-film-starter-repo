@@ -2,7 +2,7 @@
 
 ## Running this:
 
-This project was created with `create-react-app`. Once you have the app cloned, you should run `npm install`. You can then run it with `npm run start`.
+This project was created with `create-react-app`. Once you have the app cloned, you should run `npm install`. You can then run it with `npm start`.
 
 ### What is this?
 
